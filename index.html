@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mission to Mars</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="icon" type="image" href="https://pngimg.com/uploads/mars_planet/mars_planet_PNG13.png">
+
+    />
+    <!------------------------ CSS Style Section --------------------------->
+	<style>
+		body {
+			position: relative;
+			background-attachment: fixed;
+			background-image: url("https://www.funkidslive.com/wp-content/uploads/2017/02/mars-facts.jpg");
+			background-color: rgb(90, 40, 10, 0.2);
+			background-blend-mode: lighten;
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			margin: 0;
+		}
+		
+		/*=Top header images
+		__________________________________ */
+
+		.top_header {
+			position: relative;
+			background-image: url('https://i1.wp.com/lpatucson.org/central/wp-content/uploads/sites/3/2017/04/Red-Planet-header.jpg');
+			background-blend-mode: saturation;
+			text-align: center;
+			background-repeat: no-repeat;
+			background-size: 100% 180%;
+			width: 100%;
+			padding-bottom: 15px;
+			margin-top: -10px;
+		}
+
+		#circle-img {
+			background: url('https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg') #6b81af;
+			position: relative;
+			height: 120px;
+			width: 138px;
+		}
+
+		.text-center {
+			text-align: center;
+			font-size: 50px;
+			font-weight: bold;
+			color: white;
+			font-family: Gill Sans, sans-serif;
+			padding-top: 60px;
+		}
+		
+		.card-text {
+			text-align: center;
+			color: white;
+			font-size: 25px;
+			width: 220%;
+		}
+		
+
+		
+		.text-marsH {
+			text-align: center;
+			margin-left: 50px;
+		}
+
+
+		/* =Buttons
+		______________________________________ */
+
+		.btn {
+			text-align:center;
+			color: white;
+			font-weight: bold;
+			vertical-align: middle;
+			height: 40px;
+			cursor: pointer;
+			border-radius: 10px;
+			box-shadow: 1px 1px  4px #4d0000;
+		}
+
+		.btn-lg {
+			text-fill-color: white;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 7px;
+			padding-top: 7px;
+			font-size: 22px;
+			line-height: 20px;
+			border-top-left-radius: 50px;
+			border-top-right-radius: 50px;
+			border-bottom-right-radius: 50px;
+			border-bottom-left-radius: 50px;
+			background-color: #990000;
+		}
+
+		.btn-danger{
+			color: white;
+			position: relative;
+		}
+		.btn-danger:hover{
+			color: white;
+			background-color: #b30000;
+		}
+
+
+		/* =Buttons underline functions
+		______________________________________ */
+
+		a:link {
+			text-decoration: none;
+		}
+
+		a:visited {
+			text-decoration: none;
+		}
+
+		a:link, a:visited {
+			text-decoration: none !important;
+			-webkit-font-smoothing: antialiased !important;
+		}
+
+		a {
+			color: white;
+			font-family: Gill Sans, sans-serif;
+		}
+
+		.expandable a:link, .expandable a:visited, #admin-menu-menu a:link, #admin-menu-menu a:visited, .admin-menu-action a:link, .admin-menu-action a:visited {
+			color: #fff !important;
+		}
+		a:focus, input:focus, button:focus, textarea:focus, select:focus {
+			-moz-box-shadow: #06f 0 0 7px;
+			-webkit-box-shadow: #06f 0 0 7px;
+			box-shadow: #06f 0 0 7px;
+			z-index: 1;
+		}
+		
+		
+		#cont-1 {
+			padding-top: 20px;
+		}
+		
+		
+		#weather-box {
+			box-sizing: border-box;
+			padding: 15px;
+			padding-left: 100px;
+			background-color: rgb(255, 105, 71, 0);
+			background-blend-mode: hue;
+		}
+		
+		.bg-style { 
+			list-style: square inside;
+			background-blend-mode: overlay;
+			box-shadow: 1px 2px 3px 1px rgb(60, 60, 60);
+			border-radius: 4px;
+		}
+		
+		.bg-style2 { 
+			box-sizing: border-box;
+			background-blend-mode: hue;
+			box-shadow: 1px 2px 3px 1px rgb(60, 60, 60);
+			border-radius: 4px;
+		}
+		
+		.bg-style3 {
+			box-sizing: content-box;
+			list-style: square inside;
+			background-blend-mode: overlay;
+			box-shadow: 1px 2px 3px 1px rgb(60, 60, 60);
+			border-radius: 4px;
+			
+		}
+		
+		#news-box {
+			box-sizing: border-box;
+			background-color: rgb(255, 105, 71, 0);
+			background-blend-mode: hue;
+		}
+		
+		h2 {
+			font-size: 28px;
+			font-weight: bold;
+			color: white;
+			font-family: Gill Sans, sans-serif;
+			text-align: center;
+			padding-top: 15px;
+		}
+
+		h3 {
+			font-size: 28px;
+			font-weight: bold;
+			color: white;
+			font-family: Gill Sans, sans-serif;
+			text-align: center;
+			padding-top: 15px;
+		}
+		
+		h6 {
+			font-size: 22px;
+			color: white;
+			font-family: Gill Sans, sans-serif;
+			padding-left: 20px;
+			padding-bottom: 10px;
+		}
+		
+		.new1 {
+			border: 0.5px solid #c8a300;
+			width: 99px;
+			margin-top: 2px;
+		}
+		
+		p {
+			font-size: 20px;
+			color: white;
+			font-family: Gill Sans, sans-serif;
+			padding-left: 20px;
+			padding-bottom: 15px;
+		}
+		
+		.pa {
+			font-size: 20px;
+			color: white;
+			font-family: Gill Sans, sans-serif;
+			padding-left: 20px;
+			padding-bottom: 15px;
+		}
+
+		
+		#featured-image {
+			width: 96%;
+			height: 100%;
+			padding-left: 6px;
+			padding-bottom: 6px;
+			box-sizing: border-box;
+			background-color: rgb(255, 105, 71, 0);
+			background-blend-mode: hue;
+			margin-left: 15px;
+			margin-bottom: 10px;
+		}
+		
+		.sty {
+			width: 360px;
+			height: 490px;
+			padding-left: 6px;
+			padding-bottom: 6px;
+			padding: 15px;
+		}
+		
+		.hem-pics {
+			width: 190%;
+			height: 190%;
+			margin-left: 30px;
+			margin-top: 30px;
+			background-blend-mode: hue;
+		}
+		
+		
+	</style>
+</head>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Add Jumbotron to Header -->
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
+        <!-- Add a button to activate scraping script -->
+        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+      </div>
+
+      <!-- Add section for Mars News -->
+      <div class="row" id="mars-news">
+        <div class="col-md-12">
+          <div class="media">
+            <div class="media-body">
+              <h2>Latest Mars News</h2>
+              <h4 class="media-heading">{{ mars.news_title }}</h4>
+              <p>{{ mars.news_paragraph }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section for Featured Image and Facts table -->
+      <div class="row" id="mars-featured-image">
+        <div class="col-md-8">
+          <h2>Featured Mars Image</h2>
+
+          <!-- if images is False/None/non-existent, then default to error message -->
+          <img
+            src="{{mars.featured_image | default('static/images/error.png', true) }}"
+            class="img-responsive"
+            alt="Responsive image"
+          />
+        </div>
+
+        <div class="col-md-4">
+          <!-- Mars Facts -->
+          <div class="row" id="mars-facts">
+            <h4>Mars Facts</h4>
+            {{ mars.facts | safe }}
+          </div>
+        </div>
+      </div>
+
+      <!-- Section for Mars Hemispheres -->
+      <div class="row" id="mars-hemispheres">
+        <div class="page-header">
+          <h2 class="text-center">Mars Hemispheres</h2>
+        </div>
+
+        {% for hemisphere in mars.hemispheres %}
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="...">
+            <div class="caption">
+              <h3>{{hemisphere.title}}</h3>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
